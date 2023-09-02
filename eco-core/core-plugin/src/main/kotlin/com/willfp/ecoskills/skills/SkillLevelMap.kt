@@ -72,9 +72,7 @@ class SkillLevelMap(
 
             Bukkit.getPluginManager().callEvent(event)
 
-            if (!event.isCancelled) {
-                giveXP(skill, event.gainedXP)
-            }
+            giveXP(skill, event.gainedXP)
         } else {
             giveXP(skill, xp)
         }
